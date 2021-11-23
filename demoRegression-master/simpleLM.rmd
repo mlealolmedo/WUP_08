@@ -52,3 +52,14 @@ summary.lm(simp)
 
 ##This model does not work better than the NECK model
 
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~NECK,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+##The CHEST model is better than the NECK model
+
+
+
